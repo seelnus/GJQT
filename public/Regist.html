@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册 - 网元圣唐 - 凝炼品牌，传承乐趣</title>
+    <link type="text/css" rel="stylesheet" rev="stylesheet"	href="css/2018.css">
+    <link type="text/css" rel="stylesheet" rev="stylesheet"	href="css/idangerous.swiper2.7.6.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="js/img_ver.js"></script>
+    <style type="text/css">
+        a {
+            text-decoration: none
+        }
+    
+        .footer {
+            font: 12px "微软雅黑", Tahoma, "宋体";
+            margin: 0 auto;
+            width: 100%;
+            height: 120px;
+            background: #212121
+        }
+    
+        .footer .fCon {
+            width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+    
+        a.logo_black {
+            display: inline-block;
+            width: 246px;
+            height: 110px;
+        }
+    
+        .f_Message {
+            float: right;
+            padding: 16px 0 0 0;
+        }
+    
+        .f_Message .fMes {
+            color: #9a9a9a;
+            margin-top: 8px;
+            float: right;
+            clear: both;
+            *width: 100% !important;
+        }
+    
+        .f_Message .fMes a {
+            color: #9a9a9a;
+        }
+    
+        .f_Message .fMes a:hover {
+            color: #fff;
+        }
+        /* 定义模态对话框外面的覆盖层样式 */
+        #modal-overlay {
+            visibility: hidden;
+            position: absolute;   /* 使用绝对定位或固定定位  */
+            left: 0;
+            top: 0;
+            width:100%;
+            height:100%;
+            text-align:center;
+            z-index: 1000;
+            background-color: #333;
+            opacity: 0.9;   /* 背景半透明 */
+        }
+        /* 模态框样式 */
+        .modal-data{
+            width:600px;
+            height:400px;
+            margin: 300px auto;
+            background-color: #fff;
+            border:1px solid #000;
+            padding:15px;
+            text-align:center;
+            border-radius: 5%;
+        }
+        .close_btn{
+            text-align: right;  
+            text-decoration: none;
+            font-size: 15px;
+            cursor: pointer;       
+        }
+        /*滑块验证*/
+        .verBox {
+            width:100%;
+            text-align:center;
+            left:404px;
+            top:0;
+            opacity:1;
+            transition:all 0.8s;
+            padding-top:85px;
+        }
+        .err {
+            margin:12px 0 0;
+            line-height:12px;
+            height:12px;
+            font-size:12px;
+            color:red;
+        }
+
+    canvas {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    user-select: none;
+	    touch-action: none;
+	    cursor: none;
+        opacity: 1;
+    }
+    .content_hc{
+        position: relative;
+    }
+    .box_01hc{
+        position:absolute;
+        background-color:rgba(0, 0, 0, 0.45)
+    }
+    </style>
+</head>
+<body>
+    <!--头部-->
+<div class="basic">
+<div class="header">
+    <div class="hContent">
+        <a href="javascript:;" class="logo"><img src="picture/h100logo_loginheader.png"> </a>
+        <ul id="nav" class="nav clearfix">
+            <li class="nLi">
+                <h3>
+                    <a href="http://www.wangyuan.com/">首页</a>
+                </h3>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="http://www.wangyuan.com/about.shtml" target="_blank">公司简介</a>
+                </h3>
+            </li>
+            <li class="nLi">
+
+                <h3>
+                    <a href="http://job.wangyuan.com/" target="_blank">人才招聘</a>
+                </h3>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="http://www.wangyuan.com/mobile.shtml" target="_blank">商务合作</a>
+                </h3>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="javascript:;">官方商城</a>
+                </h3>
+                <ul class="sub">
+                    <li><a href="http://shop.wangyuan.com/" target="_blank">官方商城</a></li>
+                    <li><a href="http://wystts.tmall.com/" target="_blank">淘宝商城</a></li>
+                </ul>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="http://service.wangyuan.com/" target="_blank">客服中心</a>
+                </h3>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="javascript:;">合作游戏</a>
+                </h3>
+                <ul class="sub">
+                    <li><a href="http://hsxl.wangyuan.com/" target="_blank">虹色旋律</a></li>
+                    <li><a href="http://yx.wangyuan.com/" target="_blank">雨血系列</a></li>
+                    <li><a href="http://ys7.wangyuan.com/" target="_blank">伊苏7</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<!--主体部分-->
+    <div class="content_hc">
+            <canvas></canvas>
+            <div id="modal-overlay" style="visibility: hidden;">
+                <div class="modal-data">
+                    <p  class="close_btn"><a onclick="overlay()">X</a></p>
+                    <div class="verBox">
+                        <div id="imgVer" style="display:inline-block;"></div>
+                    </div>
+                </div>
+            </div>        
+    <div class="line_01">
+        <div class="main">
+            <div class="box_01hc">
+                <ul class="hc_ul">
+                    <li><a href="javascript:;" class="hover" id="c_1">手机注册</a></li>
+                </ul>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <div class="title_hczc">手机注册</div>
+                            <div class="ztner_box_zc">
+                                <form id="regphoneform" method="post" action='https://login.wangyuan.com/index/brandnewreg'>
+                                    <input type="hidden" name="redr" value="http://member.wangyuan.com/"/> 
+                                    <input type="hidden" name="redr" value="http://member.wangyuan.com/"/>
+                                    <input type="hidden" name="service" class="service" value="gb"/> 
+                                    <input type="hidden" name="ad" class="ad" value=""/> 
+                                    <input id="phone" name="phone"  type="text" class="int_01 phone_reg reg_phone" maxlength="12" placeholder="请输入您想要创建的手机号码" />
+                                        <span id='errorsDiv_phone'
+                                        class="errorsDiv_phone mobile_hint">
+                                        </span>
+                                    <div id="embed-captcha" style="display: none"></div>
+                                    <!--<p id="wait" class="show" style="display: block">点击此处获取验证码</p>
+                                    <p id="notice" class="hide" style="display: none">请先完成验证</p>
+                                    <div class="error_boxhc2">
+                                        <span id='sjyzmerr' style="display: none">*验证码错误</span>
+                                    </div>-->
+                                    <input type="text" name="uname" id="wait"  placeholder="请输入不超过9位由数字和字母组成的用户名" class=" show reg_user">
+                                    <span class="tip user_hint"></span>
+                                    <a class="btn_act_sjyzm phone_reg" id="phonebtn" href="javascript:;" onclick="overlay()">点击进行验证</a>
+                                    <div id="phonecode" type="text" class="int_02" style="visibility: hidden;"></div>
+                                    <a class="btn_act_sjyzm3" id="qx_phonebtn" href="javascript:;"
+                                       style="display: none">点击获取短信验证</a>
+                                    <div class="error_boxhc">
+                                        <span id='errorsDiv_phonecode' style="display: none">*验证码输入错误</span>
+                                    </div>
+                                    <!--<input id="phone_password" name="password" placeholder="请输入密码"
+                                           onfocus="phone_pass_tips()" onblur="phone_check_pass()"
+                                           type="password" class="int_01 phone_reg" maxlength="16"/>-->
+                                    <input type="password" name="password" id="phone_password"  placeholder="请输入密码" class="reg_password int_01 phone_reg" >
+                                    <span class="tip password_hint"></span>
+                                    <input id="phone_comfirmpwd" name="comfirmpwd"
+                                           placeholder="请再次输入密码" type="password"
+                                           class="int_01 phone_reg reg_confirm" maxlength="16"/>
+                                    <span class="tip confirm_hint"></span>
+                                    <input id="phone_realname" name="email"
+                                            type="text" class="int_01 phone_reg reg_email"
+                                           maxlength="16" placeholder="请输入您的邮箱"/>
+                                        <span id='sjxmerr' class="email_hint"></span>
+                                    <input id="phone_idcard" name="idcard"
+                                            type="text" class="int_01  phone_reg reg_card"
+                                           maxlength="18" placeholder="请输入您的身份证号码"/>
+                                        <span class='sjidcarderr card_hint'></span>
+                                    <div class="bb_box_hc">
+                                        <a id="phoneregisterbtn" href="javascript:void(0);"
+                                           class="btn_tongyi_hc red_button">同意相关条款并注册</a>
+                                    </div>
+                                </form>
+                                <div class="bb_box_hc02">
+                                    <a href="https://member.wangyuan.com/member/Agreement"
+                                       target="_blank">阅读相关条款</a>
+                                </div>
+                                <div class="bb_box_hc03">
+                                    已有网元圣唐账号？<a href="/member/login?redr=http%3A%2F%2Fmember.wangyuan.com%2F&service=gb">立即登录</a>无法注册？<a href="http://service.wangyuan.com/" target="_blank">问题反馈</a>
+                                </div>
+                            </div>
+                        </div>
+                                    <!--脚部提示框-->
+                                    <div class="bb_box_hc">
+                                        <a id="emailregisterbtn" href="javascript:void(0);"
+                                           class="btn_tongyi_hc">同意相关条款并注册</a>
+                                    </div>
+                                </form>
+                                <div class="bb_box_hc02">
+                                    <a href="https://member.wangyuan.com/member/Agreement" target="_blank">阅读相关条款</a>
+                                </div>
+                                <div class="bb_box_hc03">
+                                    已有网元圣唐账号？
+                                    <a href="/member/login?redr=http%3A%2F%2Fmember.wangyuan.com%2F&service=gb">立即登录</a>无法注册？
+                                    <a href="http://service.wangyuan.com/" target="_blank">问题反馈</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+<div class="footer">
+    <div class="fCon">
+        <a href="http://www.wangyuan.com/" class="logo_black"><img src="picture/h144logoheader.png"/></a>
+        <div class="f_Message">
+            <div class="fMes">
+                    <span style="float: left; margin-top: -12px;">
+                        <a href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/4028c08b5318345f01533049f8f9188b" target="_blank">
+                            <img src="picture/wenhuajingying.png" width="40" height="40" />
+                        </a>
+                    </span> 
+                    <a href="http://www.wangyuan.com/about.shtml" target="_blank">公司简介</a>|
+                    <a href="http://www.wangyuan.com/mobile.shtml" target="_blank">商务合作</a>| 
+                    <a href="http://job.wangyuan.com/" target="_blank"> 人才招聘</a> | 
+                    <a href="http://www.wangyuan.com/2012/05/07/000109.shtml" target="_blank"> 法律声明</a> | 
+                    <a href="http://www.wangyuan.com/contact.shtml" target="_blank">联系我们</a>|
+                    <a href="http://cs.wangyuan.com/news.php" target="_blank">家长监护</a>
+            </div>
+            <div class="fMes">Copyright &copy;2009 wangyuanshengtang Inc. All rights
+                reserved. 网元圣唐 版权所有 互联网出版许可证号：（总）网出证（京）字第126号</div>
+            <div class="fMes">
+                京网文[2015]2161-394号 经营性ICP： 
+                <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证090571号</a> 
+                京公网安备11010502035187号
+                营业执照号：91110107692327337F
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/101/three.min.js"></script>
+<script>
+function overlay(){
+        var e1 = document.getElementById('modal-overlay');
+        e1.style.visibility = (e1.style.visibility == "visible")? "hidden" : "visible";
+    }
+    imgVer({
+            el:'$("#imgVer")',
+            width:'260',
+            height:'116',
+            img:[
+                'images/ver.png',
+                'images/ver-1.png',
+                'images/ver-2.png',
+                'images/ver-3.png'
+            ],
+            success:function () {
+                $(".verBox").css({
+                    "left":"404px",
+                    "opacity":"1"
+                });
+                $("#modal-overlay").css({
+                    "left":"0",
+                    "visibility": "hidden"
+                });
+                imgVer_Boolean=true;
+            },
+            error:function () {
+                //alert('错误什么都不执行')
+                imgVer_Boolean=false;
+            }
+        });
+      
+       // http://www.cssplant.com/clip-path-generator
+  p = [
+	[389,246,0],
+  [410,255,20],
+  [413,268,7],
+  [431,261,12],
+  [418,244,30],
+  [416,217,25],
+  [420,205,8],
+  [427,227,-20],
+  [432,236,5],
+  [444,228,12],
+  [451,232,41],
+  [446,246,72],
+  [443,264,96],
+  [446,278,65],
+  [463,267,20],
+  [460,258,-10],
+  [464,243,-20],
+  [459,233,0],
+  [475,225,22],
+  [484,225,29],
+  [490,214,51],
+  [476,202,55],
+  [462,202,55],
+  [446,205,42],
+  [440,192,42],
+  [430,183,72],
+  [413,184,58],
+  [406,191,32],
+  [406,207,0],
+  [402,220,0],
+  [390,222,20],
+  [385,228,10],
+  [389,246,0]
+];
+
+        var w = window.innerWidth, h = window.innerHeight;
+window.onresize = function(){
+  var w = window.innerWidth, h = window.innerHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize( w, h );
+}
+
+cameraSpeed = .0003;
+lightSpeed = .001;
+tubularSegments = 1000;
+radialSegments = 3;
+tubeRadius = 2;
+ambientLight = 0x222222;
+lightColor = 0xffffff;
+lightIntensity = 1;
+lightDistance = 20;
+hs = 0; // Hue-Start
+he = 360; // Hue-End
+
+var renderer = new THREE.WebGLRenderer({
+  canvas: document.querySelector("canvas"),
+  antialias: true,
+});
+renderer.setSize(w, h);
+
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(60, w / h, .001, 1000);
+
+var starsGeometry = new THREE.Geometry();
+for(i=0; i<3000; i++){
+	var star = new THREE.Vector3();
+	star.x = THREE.Math.randFloatSpread(1500);
+	star.y = THREE.Math.randFloatSpread(1500);
+	star.z = THREE.Math.randFloatSpread(1500);
+	starsGeometry.vertices.push(star);
+}
+var starsMaterial = new THREE.PointsMaterial({color: 0xffffff});
+var starField = new THREE.Points(starsGeometry,starsMaterial);
+scene.add(starField);
+
+for (i=0; i<p.length; i++) {
+  var x = p[i][0];
+  var y = p[i][2];
+  var z = p[i][1];
+  p[i] = new THREE.Vector3(x,y,z);
+}
+var path = new THREE.CatmullRomCurve3(p);
+var geometry = new THREE.TubeGeometry(path,tubularSegments,tubeRadius,radialSegments,true);
+
+hue = hs;
+hup = true;
+for(i=0; i<geometry.faces.length; i++){
+  hup==1?hue++:hue--;
+  hue==he?hup=false:(hue==hs)?hup=true:0;
+  geometry.faces[i].color = new THREE.Color("hsl("+hue+",100%,50%)");
+}
+
+var material = new THREE.MeshLambertMaterial({
+  side: THREE.BackSide,
+  vertexColors: THREE.FaceColors,
+  wireframe: true
+});
+
+var tube = new THREE.Mesh(geometry, material);
+scene.add(tube);
+
+var light = new THREE.PointLight(0xffffff, 1, 50);
+scene.add(light);
+var light2 = new THREE.AmbientLight(ambientLight);
+scene.add(light2);
+
+var l1 = new THREE.PointLight(lightColor, lightIntensity, lightDistance);
+scene.add(l1);
+var l2 = new THREE.PointLight(lightColor, lightIntensity, lightDistance);
+scene.add(l2);
+var l3 = new THREE.PointLight(lightColor, lightIntensity, lightDistance);
+scene.add(l3);
+var l4 = new THREE.PointLight(lightColor, lightIntensity, lightDistance);
+scene.add(l4);
+var l5 = new THREE.PointLight(lightColor, lightIntensity, lightDistance);
+scene.add(l5);
+
+var pct = 0;
+var pct2 = 0;
+function render(){
+  pct += cameraSpeed
+  pct2 += lightSpeed;
+  var pt1 = path.getPointAt(pct%1);
+  var pt2 = path.getPointAt((pct + .01)%1);
+  camera.position.set(pt1.x,pt1.y,pt1.z);
+  camera.lookAt(pt2);
+  light.position.set(pt2.x, pt2.y, pt2.z);
+  
+  l1.position.set(path.getPointAt((pct2+.0)%1).x, path.getPointAt((pct2+.0)%1).y, path.getPointAt((pct2+.0)%1).z);
+  l2.position.set(path.getPointAt((pct2+.2)%1).x, path.getPointAt((pct2+.2)%1).y, path.getPointAt((pct2+.2)%1).z);
+  l3.position.set(path.getPointAt((pct2+.4)%1).x, path.getPointAt((pct2+.4)%1).y, path.getPointAt((pct2+.4)%1).z);
+  l4.position.set(path.getPointAt((pct2+.6)%1).x, path.getPointAt((pct2+.6)%1).y, path.getPointAt((pct2+.6)%1).z);
+  l5.position.set(path.getPointAt((pct2+.8)%1).x, path.getPointAt((pct2+.8)%1).y, path.getPointAt((pct2+.8)%1).z);
+  
+  renderer.render(scene, camera);
+  requestAnimationFrame(render);
+}
+requestAnimationFrame(render);
+
+</script>
+</script>
+</html>

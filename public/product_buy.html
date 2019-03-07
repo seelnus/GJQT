@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/product_buy.css">
+    <title>购买网页</title>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js" ></script>
+    <style>
+        /*顶部导航栏*/
+        img{
+            vertical-align:top;
+            border:0 none;
+        }
+        ul{
+            list-style:none;
+        }
+        #_GB_NAV_{
+            border-bottom: solid 1px #ccc;
+            height: 40px;
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+        #_GB_NAV_ ._MAIN_ {
+            position: relative;
+            width: 980px;
+            left: 50%;
+            margin-left: -490px;
+            height: 40px;
+            line-height: 40px;
+            top:0;
+        }
+        ._MAIN_ ._LOGO_ {
+            height: 40px;
+            width: 165px;
+            display: block;
+            background: url() no-repeat left center;
+        }
+        ._MAIN_ #_AD_ {
+            position: absolute;
+            left: 250px;
+            width: 165px;
+            height: 40px;
+            top: 0;
+        }
+        #_AD_ a {
+            width: 165px;
+            height: 40px;
+            display: block;
+        }
+        #_AD_BOX_ {
+            border: solid 1px #ccc;
+            position: absolute;
+            top: 40px;
+            height: 100px;
+            left: -250px;
+        }
+        ._MAIN_ ._LINKS_ {
+            position: absolute;
+            top: 0;
+            right: 60px;
+        }
+        ._LINKS_ ul {
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        ._LINKS_ li {
+            float: left;
+            list-style-type: none;
+        }
+        ._LINKS_ a {
+            margin: 0 7px;
+            text-decoration: none;
+            font-size: 12px;
+            color: black;
+            line-height: 40px;
+        }
+        /*footer样式*/
+        a {
+            text-decoration: none
+        }
+    
+        .footer {
+            font: 12px "微软雅黑", Tahoma, "宋体";
+            margin: 0 auto;
+            width: 100%;
+            height: 120px;
+            background: #212121
+        }
+    
+        .footer .fCon {
+            width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+    
+        a.logo_black {
+            display: inline-block;
+            width: 246px;
+            height: 110px;
+        }
+    
+        .f_Message {
+            float: right;
+            padding: 16px 0 0 0;
+        }
+    
+        .f_Message .fMes {
+            color: #9a9a9a;
+            margin-top: 8px;
+            float: right;
+            clear: both;
+            *width: 100% !important;
+        }
+    
+        .f_Message .fMes a {
+            color: #9a9a9a;
+        }
+    
+        .f_Message .fMes a:hover {
+            color: #fff;
+        } 
+    </style>
+</head>
+<body>
+    <div id="_GB_NAV_" style="display:block;">
+        <link rel="stylesheet" href="">         <!--header nav-->
+        <div class="_MAIN_">
+            <a class="_LOGO_" href="http://www.wangyuan.com" target="_blank">
+                <img src="images/wyst_sx.png" width="135" style="margin-top:2px;">
+            </a>
+            <div id="_AD_" style="background-image: url(images/buy.png);background-position:left bottom; background-repeat:no-repeat;">
+                <a href="http://act.wangyuan.com/gjqt3/201811/sale/index.html"></a>
+            </div>
+            <div class="_LINKS_">
+                <ul>
+                    <li>
+                        <a href="javascript:;" target="_blank">注册</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">用户中心</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">充值中心</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">客服中心</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">商务合作</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" target="_blank">加入我们</a>
+                    </li>
+                </ul>
+                <div id="_GAMES_">
+                        <!--展开页-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_1">
+        <!--楼层1-->
+        <div class="gs_logo">
+            <h1 class="logo">
+                <a href="http://gjqt3.wangyuan.com" target="_blank">
+                    <img src="picture/logo.png" alt="古剑奇谭3" title="古剑奇谭3">
+                </a>
+            </h1>
+        </div> 
+        <div class="content">
+            <div class="main_1">
+                <div class="slogn">
+                    <img src="picture/slogo.png" alt="">
+                </div>
+                <div class="ljbox">
+                    <ul>
+                        <li>
+                            <a href="javascript:;" target="_blank">
+                                <img src="picture/jl_img_1.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" target="_blank">
+                                <img src="picture/jl_img_2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" target="_blank">
+                                <img src="picture/jl_img_3.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video_btn">
+                    <a href="javascript:;"></a>     <!--小图标插播视频-->
+                </div>
+                <div class="ys_main">
+                    <ul>
+                        <li class="s1">
+                            <a href="javascript:;"class="hover"></a>
+                        </li>
+                        <li class="s2">
+                            <a href="javascript:;" ></a>
+                        </li>
+                        <li class="s3">
+                            <a href="javascript:;"></a>
+                        </li>
+                    </ul>
+                    <!--数字版购买-->
+                    <div class="gmbtn">
+                        <p class="p1">
+                            <a href="javascript:;"></a>
+                        </p>
+                        <p class="p2">
+                            <a href="javascript:;"></a>
+                        </p>
+                    </div>
+                    <!--联动版购买-->
+                    <div class="gmbtn">
+                        <span>
+                            <img src="images/ld_sztitle.png" alt="">
+                        </span>
+                        <p class="p3">
+                            <a href="javascript:;"></a>
+                        </p>
+                        <p class="p4">
+                            <a href="javascript:;"></a>
+                        </p>
+                    </div>
+                    <!--典藏版购买-->
+                    <div class="gmbtn">
+                        <i>
+                            <img src="picture/tm_logo.png" alt="">
+                        </i>
+                        <p class="p5">
+                            <a href="javascript:;"></a>
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!--楼层2-->
+    <div class="head_2">
+        <div class="content" id="w1">
+            <!--联动内容-->
+            <div class="ld_main">
+                <img src="picture/title_2.png" alt="">
+                <div class="txt_js2">
+                    <i>
+                        <img src="picture/hr.png" alt="">
+                    </i>
+                    <p>大家好 购买链接请直接打我支付宝就行</p>
+                    <i>
+                        <img src="picture/hr.png" alt="">
+                    </i>
+                </div>
+                <div class="buy_btn2">
+                    <a href="javascript:;"></a>
+                </div>
+                <img src="picture/szld_title.png" style="margin:0 auto 20px auto;display: block;">
+                <div class="mainbox">
+                    <div class="tab_box tab1">
+                        <ul>
+                            <li style="display:block;">
+                                <a href="javascript:;">
+                                    <img src="http://127.0.0.1:3000/image/lb_img_1.jpg" style="width: 604px;height: 402px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://127.0.0.1:3000/image/lb_img_2.jpg" style="width: 604px;height: 402px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://127.0.0.1:3000/image/lb_img_3.jpg" style="width: 604px;height: 402px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://127.0.0.1:3000/image/lb_img_4.jpg" style="width: 604px;height: 402px;">
+                                </a>
+                            </li>                                  
+                        </ul>
+                        <div class="tab_nav" id="tabnav1">
+                            <span class="hover">
+                                <a href="javascript:;">挂件效果一</a>
+                            </span>
+                            <span>
+                                <a href="javascript:;">挂件效果二</a>
+                            </span>
+                            <span>
+                                <a href="javascript:;">温泉效果一</a>
+                            </span>
+                            <span>
+                                <a href="javascript:;">温泉效果二</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right_main">
+                        <div class="right_top">
+                            <dl>
+                               <dt>
+                                   <p>
+                                       <img src="picture/tx_img_1.gif">
+                                       <img src="picture/jia.png" class="i1">
+                                       <img src="picture/tx_img_2.jpg" class="i2">
+                                   </p>
+                                   <span>柿饼温泉主题头像框</span>
+                                   <span class="s1">柿饼温泉头像主题</span>
+                               </dt>
+                               <dd>
+                                   <img src="picture/tx_img_3.gif">
+                                   <span>组合效果</span>
+                               </dd>
+                            </dl>
+                        </div>
+                        <div class="right_bottom">
+                            <span>基础内容</span>
+                            <p>
+                                <img src="picture/lx_tb.png">
+                                《古剑奇谭三》数字版激活码*1
+                            </p>
+                            <em>附赠《古剑奇谭网络版》增值内容</em>
+                            <p>
+                                <img src="picture/lx_tb.png">
+                                3000分钟游戏时长
+                            </p>
+                            <p>
+                                <img src="picture/lx_tb.png">
+                                《古剑奇谭三》柿饼温泉主题互动挂件*1
+                            </p>
+                            <p>
+                                <img src="picture/lx_tb.png">
+                                《古剑奇谭三》柿饼温泉主题联动头像*1
+                            </p>
+                            <p>
+                                <img src="picture/lx_tb.png">
+                                《古剑奇谭三》柿饼温泉主题联动头像框*1
+                            </p>
+                            <div class="rw_cy">
+                                <img src="picture/cy_rw.png">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="gmbox">
+                    <span>购买须知</span>
+                    <p>
+                        <i>1</i>
+                        <em>点击【购买并激活】按钮，填写自己或朋友的账号，付款成功后即可直接为填写账号激活《古剑奇谭三》。</em>
+                    </p>
+                    <p>
+                        <i>2</i>
+                        <em>点击【购买激活码】按钮，填写自己的手机号，付款成功后即可在手机短信中查收激活码，或者截图保存弹出的激活码页面。</em>
+                    </p>
+                    <p>
+                        <i>3</i>
+                        <em>11月23日后，激活过《古剑奇谭三》数字联动版的账号登录《古剑奇谭网络版》，即可通过点击游戏内小地图下方【兑换奖励】按钮领取附赠的《古剑奇谭网络版》增值内容（互动挂件、联动头像、联动头像框）。游戏时长将直接发放到激活《古剑奇谭三》数字联动版的账号下，登录用户中心或《古剑奇谭网络版》即可查看获赠的游戏时长。</em>
+                    </p>
+                    <p>
+                        <i>4</i>
+                        <em>点击页面顶部【我的购买记录】按钮，即可查询自己账号的激活情况和订单详情。</em>
+                    </p>
+                </div>  
+            </div>
+            <div class="hr"></div>
+            <!--数字内容-->
+            <img src="picture/title_1.png" id="w2">
+            <div class="buy_btn1">
+                <a href="javascript:;"></a>
+            </div>
+            <div class="text_js">
+                <span>基础内容</span>
+                <p>
+                    <img src="picture/lx_tb.png">
+                    《古剑奇谭三》数字版激活码*1
+                </p>
+                <span class="s1">购买须知</span>
+                <p class="p1">
+                    <img src="picture/lx_tb.png">
+                    点击【购买并激活】按钮，填写自己或朋友的账号，付款成功后即可直接为填写账号激活《古剑奇谭三》。
+                </p>
+                <p class="p1">
+                    <img src="picture/lx_tb.png">
+                    点击【购买激活码】按钮，填写自己的手机号，付款成功后即可在手机短信中查收激活码，或者截图保存弹出的激活码页面。
+                </p>
+                <p class="p1">
+                    <img src="picture/lx_tb.png">
+                    点击页面顶部【我的购买记录】按钮，即可查询自己账号的激活情况。
+                </p>
+            </div>
+            <div class="hr"></div>
+            <!--实体内容-->
+            <div class="st_main" id="w3">
+                <img src="picture/title_3.png">
+                <div class="buy_btn3">
+                    <img src="picture/tm_logo.png">
+                    <a href="javascript:;"></a>
+                    <div class="xgtb">
+                        <img src="picture/xg_tb1.png">
+                    </div>
+                </div>
+                <div class="stzs_box">
+                    <dl>
+                        <dt>
+                            <img src="picture/zs_img_1.jpg">
+                        </dt>
+                        <dd>
+                            <img src="picture/zs_img_2.jpg">
+                            <div class="jlbox">
+                                <span>基础内容</span>
+                                <p>
+                                    <i></i>
+                                    <em>
+                                        "游戏主题纪念U盘*1"
+                                        <br>
+                                        "64G容量"
+                                        <br>
+                                        "USB3.0接口"
+                                        <br>
+                                        "内附游戏安装包"
+                                        <br>
+                                        "传输速度90MB/秒"
+                                    </em>
+                                </p>
+                                <p>
+                                    <i></i>
+                                    <em>女主角岑缨主题仿珐琅工艺金属徽章*1</em>
+                                </p>
+                                <p>
+                                    <i></i>
+                                    <em>女主角云无月主题彩瓷工艺金属徽章*1</em>
+                                </p>
+                                <p>
+                                    <i></i>
+                                    <em>游戏激活卡*1</em>
+                                </p>
+                                <p>
+                                    <i></i>
+                                    <em>简易游戏指南*1</em>
+                                </p>
+                                <p>
+                                    <i></i>
+                                    <em>包装盒*1</em>
+                                </p>
+                                <div class="sb_rw">
+                                    <img src="picture/sb_rw.png">
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>    
+                </div>
+                <!--实体典藏版内容-->
+                <div class="mainbox">
+                    <div class="tab_box tab2">
+                        <ul>
+                            <li style="display:block">
+                                <a href="javascript:;">
+                                    <img src="http://127.0.0.1:3000/image/lb_img_1.jpg" style="width:604px;height:400px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://127.0.0.1:3000/image/lb_img_2.jpg" style="width:604px;height:402px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://127.0.0.1:3000/image/lb_img_3.jpg" style="width:604px;height:402px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="http://127.0.0.1:3000/image/lb_img_4.jpg" style="width:604px;height:402px;">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab_nav" id="tabnav2">
+                            <span class="hover"><a href="javascript:;">挂件效果一</a></span>
+                            <span><a href="javascript:;">挂件效果二</a></span>
+                            <span><a href="javascript:;">温泉效果一</a></span>
+                            <span><a href="javascript:;">温泉效果二</a></span>
+                        </div>
+                    </div>
+                    <div class="right_main">
+						 	  	   <div class="right_top">
+						 	  	   	    <dl>
+						 	  	   	    	  <dt>
+						 	  	   	    	  	    <p>
+						 	  	   	    	  	    	 <img src="picture/tx_img_1.gif">
+						 	  	   	    	  	    	 <img src="picture/jia.png" class="i1">
+						 	  	   	    	  	    	 <img src="picture/tx_img_2.jpg" class="i2">
+						 	  	   	    	  	    </p>
+						 	  	   	    	  	    <span>柿饼温泉主题头像框</span>
+						 	  	   	    	  	    <span class="s1">柿饼温泉主题头像</span>
+						 	  	   	    	  </dt>
+						 	  	   	    	  <dd>
+						 	  	   	    	  	   <img src="picture/tx_img_3.gif">
+						 	  	   	    	  	   <span>组合效果</span>
+						 	  	   	    	  </dd>
+						 	  	   	    </dl>
+						 	  	   </div>
+						 	  	   <div class="right_bottom">
+						 	  	   	   
+						 	  	   	    <em>附赠《古剑奇谭网络版》增值内容</em>
+						 	  	   	    <p>
+						 	  	   	    	<img src="picture/lx_tb.png">3000分钟游戏时长 
+						 	  	   	    </p>
+						 	  	   	    <p>
+						 	  	   	    	<img src="picture/lx_tb.png">《古剑奇谭三》柿饼温泉主题互动挂件*1 
+						 	  	   	    </p>
+						 	  	   	    <p>
+						 	  	   	    	<img src="picture/lx_tb.png">《古剑奇谭三》柿饼温泉主题联动头像*1
+						 	  	   	    </p>
+						 	  	   	    <p>
+						 	  	   	    	<img src="picture/lx_tb.png">《古剑奇谭三》柿饼温泉主题联动头像框*1
+						 	  	   	    </p>
+						 	  	   	    <div class="rw_ywy">
+						 	  	   	    	 <img src="picture/ywy_rw.png">
+						 	  	   	    </div>
+						 	  	   </div>
+						 	  </div>
+				 	  </div>
+				 	<div class="gmbox">
+			 	  	   <span>购买须知</span>
+			 	  	   <p>
+			 	  	   	   <i>1</i><em>点击【立即购买】按钮，进入网元圣唐官方天猫商城购买实体典藏版。预售期间，实体典藏版仅售12000套，售完即止。同时，玩家可通过官方举办的线下活动购买实体典藏版。实体典藏版将在11月21日 起陆续发货，请耐心等待。</em>
+			 	  	   </p>
+			 	  	    <p>
+			 	  	   	   <i>2</i><em>11月23日后，激活过《古剑奇谭三》实体典藏版的账号登录《古剑奇谭网络版》，即可通过点击游戏内小地图下方【兑换奖励】按钮领取附赠的《古剑奇谭网络版》增值内容（互动挂件、联动头像、联动头像框）。游戏时长将直接发放到激活《古剑奇谭三》实体典藏版的账号下，登录用户中心或《古剑奇谭网络版》即可查看获赠的游戏时长。</em>
+			 	  	   </p>
+			 	  	    <p>
+			 	  	   	   <i>3</i><em>点击页面顶部【我的购买记录】按钮，即可查询自己账号的激活情况。</em>
+			 	  	   </p>
+				 	</div>
+		 	    </div>
+                <div class="hr"></div>
+                <!--商品详情-->
+                <div class="xq_main" id="w4">
+                    <img src="picture/title_4.png">
+                    <p>
+                        <img src="picture/xq_img.png">
+                    </p>
+                </div>
+                <div class="hr"></div>
+                <!--配置要求-->
+                <div class="patch_main" id="w5">
+                    <img src="picture/title_5.png">
+                    <div class="patch_box">
+                        <table cellspacing="0" cellpadding="0" width="1178">
+                            <tbody>
+                                <tr class="nav">
+                                    <th width="120">运行环境</th>
+                                    <th width="390">基础配置</th>
+                                    <th width="391">推荐配置</th>
+                                    <th width="391">高级配置</th>
+                                    <th width="391">超高配置</th>
+                                    <th width="391">卧槽配置</th>
+                                </tr>
+                                <tr>
+                                    <td class="cl">推荐分辨率</td>
+                                    <td>1600*900</td>
+                                    <td>1920*1080</td>
+                                    <td>2560*1440</td>
+                                    <td>2560*1440</td>
+                                    <td>3840*2160</td>
+                                </tr>
+                                <tr>
+                                    <td class="cl">CPU</td>
+                                    <td>Intel Core i5 4590</td>
+                                    <td>Intel Core i5 8600</td>
+                                    <td>Intel Core i5 8600</td>
+                                    <td>Intel Core i7 8700</td>
+                                    <td>Intel Core i7 8700</td>
+                                </tr>
+                                <tr>
+                                    <td class="cl">显卡</td>
+                                    <td>NVIDIA GeForce GTX 750Ti</td>
+                                    <td>NVIDIA GeForce GTX 1060 6G</td>
+                                    <td>NVIDIA GeForce RTX 2060/GTX 1070Ti</td>
+                                    <td>NVIDIA GeForce RTX 2070/GTX 1080</td>
+                                    <td>NVIDIA GeForce RTX 2080Ti</td>
+                                </tr>
+                                <tr>
+                                    <td class="cl">内存</td>
+                                    <td>8GB</td>
+                                    <td>16GB</td>
+                                    <td>16GB</td>
+                                    <td>16GB</td>
+                                    <td>32GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="cl">硬盘空间</td>
+                                    <td>40GB</td>
+                                    <td>40GB（推荐ssd固态硬盘）</td>
+                                    <td>40GB（推荐ssd固态硬盘）</td>
+                                    <td>40GB（推荐ssd固态硬盘）</td>
+                                    <td>40GB（推荐ssd固态硬盘）</td>
+                                </tr>
+                                <tr>
+                                    <td class="cl">外设</td>
+                                    <td colspan="5">支持键鼠、xbox手柄及兼容手柄(推荐使用手柄)</td>
+                                </tr>
+                                <tr height="58">
+                                    <td class="cl">系统</td>
+                                    <td colspan="5">win7sp1以上、win8、win10(不支持32位操作系统)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--公众号信息-->
+    <div class="head_3">
+        <div class="content">
+            <div class="sb_img">
+                <img src="picture/xiong_img.png">
+            </div>
+            <div class="wx_box">
+                <dl>
+                    <dt>
+                        <img src="picture/wx_img.jpg">
+                    </dt>
+                    <dd>
+                        <p class="text">
+                            <img src="picture/bt_title.png">
+                            微信公众号
+                        </p>
+                        <div class="search">
+                            Gujian3
+                        </div>
+                        <span>
+                            微信公众号名称:古剑奇谭三
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="wb_box">
+                <p>
+                    <img src="picture/wb_img.jpg">
+                </p>
+                微博:带带大师兄
+                <div class="hdimg">
+                    <img src="picture/hd_img.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧导航-->
+    <div class="right_nav" style="width:126px;height:457px;padding:5px 0px 0px 5px;">
+        <ul>
+            <li class="n1">
+                <a href="#w1"></a>
+            </li>
+            <li class="n2">
+                <a href="#w2"></a>
+            </li>
+            <li class="n3">
+                <a href="#w3"></a>
+            </li>
+            <li class="n4">
+                <a href="#w4"></a>
+            </li>
+            <li class="n5">
+                <a href="#w5"></a>
+            </li>
+        </ul>
+        <!--收起菜单-->
+        <div class="stop_btn">
+            <a href="javascript:;">收起</a>
+        </div>
+        <div class="kfbox">
+            <p>客服电话</p>
+            <p>010-86483383</p>
+            <a href="javascript:;">客服中心</a>
+        </div>
+        <div class="back-btn">
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+    <!--通用导航-->
+    <div class="public_nav" style="width:1198px;height:108px;padding-top:7px;">
+        <div class="imgsb" style="display:block">
+            <img src="picture/sb_left.png">
+        </div>
+        <ul>
+            <li class="n1">
+                <a href="javascript:;"></a>
+            </li>
+            <li class="n2" style="display: list-item">
+                <a href="http://gjol.wangyuan.com/zt/gwld/" target="_blank"></a>
+            </li>
+            <li class="n3">
+                <a href="http://gjqt3.wangyuan.com/library/download.html" target="_blank" id="download"></a>
+            </li>
+            <li class="n4">
+                <a href="http://active.wangyuan.com/gjqt3/201811/active/index.html" target="_blank"></a>
+            </li>
+            <li class="n5">
+                <a href="http://act.wangyuan.com/gjqt3/201811/carnival/index.php" id="jianianhua" target="_blank"></a>
+            </li>
+        </ul>
+        <div class="small_nav">
+            <span class="c1">
+                <a href="http://active.wangyuan.com/gjqt3/201811/active/buy.html?act=sale" id="buyData"></a>
+            </span>
+            <span class="c2">
+                <a href="http://gjqt3.wangyuan.com/" target="_blank"></a>
+            </span>
+        </div>
+    </div>
+    <div class="flexbtn" style="bottom:115px;">
+        <a href="javascript:;" class></a>
+    </div>
+    <div class="footer">
+            <div class="fCon">
+                <a href="http://www.wangyuan.com/" class="logo_black"><img src="picture/logoheader.png"/></a>
+                <div class="f_Message">
+                    <div class="fMes">
+                            <span style="float: left; margin-top: -12px;"><a
+                                    href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/4028c08b5318345f01533049f8f9188b"
+                                    target="_blank"><img src="picture/wenhuajingying.png" width="40" height="40" /></a></span> <a
+                            href="http://www.wangyuan.com/about.shtml" target="_blank">公司简介</a>
+                         <a href="http://www.wangyuan.com/mobile.shtml" target="_blank">商务合作</a>
+                         <a href="http://job.wangyuan.com/" target="_blank"> 人才招聘</a> | <a
+                            href="http://www.wangyuan.com/2012/05/07/000109.shtml"
+                            target="_blank"> 法律声明</a> | <a
+                            href="http://www.wangyuan.com/contact.shtml" target="_blank">联系我们</a>
+                         <a href="http://cs.wangyuan.com/news.php" target="_blank">家长监护</a>
+                    </div>
+                    <div class="fMes">Copyright &copy;2009 wangyuanshengtang Inc. All rights
+                        reserved. 网元圣唐 版权所有 互联网出版许可证号：（总）网出证（京）字第126号</div>
+                    <div class="fMes">
+                        京网文[2015]2161-394号 经营性ICP： <a href="http://www.miibeian.gov.cn/"
+                                                      target="_blank">京ICP证090571号</a> 京公网安备11010502035187号
+                        营业执照号：91110107692327337F
+                    </div>
+                </div>
+            </div>
+        </div>
+    </html>
+</body>
+</html>
